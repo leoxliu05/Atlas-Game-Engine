@@ -1,0 +1,52 @@
+{
+  "actors": [
+    {
+      "name": "world",
+      "components": {
+        "1": {
+          "type": "BlockWorld",
+          "model_path": "resources/models/cube.obj",
+          "world_radius": 10
+        },
+        "2": {
+          "type": "WorldRenderer"
+        }
+      }
+    },
+    {
+      "name": "player",
+      "components": {
+        "1": {
+          "type": "PlayerController",
+          "move_speed": 5.5
+        },
+        "2": {
+          "type": "KeyboardMove"
+        }
+      }
+    },
+    {
+      "name": "camera",
+      "components": {
+        "1": {
+          "type": "CameraController",
+          "mouse_sensitivity": 0.06
+        },
+        "2": {
+          "type": "MouseLook"
+        },
+        "3": {
+          "type": "BlockInteraction"
+        }
+      }
+    },
+    {
+      "name": "ui",
+      "components": {
+        "1": {
+          "type": "MinecraftUI"
+        }
+      }
+    }
+  ]
+}

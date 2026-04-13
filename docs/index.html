@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Game Engine</title>
+  <link rel="stylesheet" href="style.css?v=2" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="brand-logo" src="images/atlas_logo.png?v=1" alt="Atlas Game Engine logo" />
+      <span>Atlas Game Engine</span>
+    </div>
+    <nav class="site-nav">
+      <a href="#demo">Demo</a>
+      <a href="#features">Features</a>
+      <a href="#tech">Tech</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Custom C++ / Lua Engine</p>
+        <h1>3D rendering, materials, and physics built into a general-purpose engine.</h1>
+        <p class="hero-text">
+          Atlas is a custom game engine built with C++ and Lua. The final version focuses on
+          an OpenGL-based 3D pipeline, script-defined materials, and Bullet-powered 3D physics.
+        </p>
+        <p class="developer-meta">
+          Developer: Xingjian Liu<br />
+          <a href="mailto:leoxliu@umich.edu">leoxliu@umich.edu</a>
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#demo">Watch Demo</a>
+          <a class="button button-secondary" href="https://github.com/leoxliu05/Atlas-Game-Engine" target="_blank" rel="noreferrer">Source Code</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="logo-panel">
+          <img src="images/atlas_logo.png?v=1" alt="" />
+        </div>
+        <div class="visual-panel">
+          <span class="panel-label">Final Engine Focus</span>
+          <ul>
+            <li>3D rendering including meshes, cameras, transforms, lighting</li>
+            <li>Customizable material system</li>
+            <li>Bullet-based 3D physics support</li>
+            <li>Easy-use UI system</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="section demo-section">
+      <div class="section-heading">
+        <p class="eyebrow">Final Demonstration</p>
+        <h2>Recorded feature walkthrough</h2>
+      </div>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/ED9zd44UqOg"
+          title="Atlas Game Engine Final Demonstration"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="section-note">
+        Demo video: <a href="https://www.youtube.com/watch?v=ED9zd44UqOg" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=ED9zd44UqOg</a>
+      </p>
+    </section>
+
+    <section id="tech" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Technologies Used</p>
+        <h2>Engine stack</h2>
+      </div>
+      <ul class="tech-list">
+        <li>C++</li>
+        <li>Lua</li>
+        <li>LuaBridge</li>
+        <li>SDL2</li>
+        <li>Box2D</li>
+        <li>OpenGL</li>
+        <li>Bullet</li>
+      </ul>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Core Work</p>
+        <h2>What this version adds</h2>
+      </div>
+
+      <div class="feature-list">
+        <article class="feature">
+          <h3>3D Rendering</h3>
+          <p>
+            Atlas supports 3D meshes, cameras, transforms, lighting, and directional light.
+            The engine also renders 2D UI inside 3D scenes, which is visible in the demo
+            through the health and hunger bars.
+          </p>
+        </article>
+
+        <article class="feature">
+          <h3>Materials</h3>
+          <p>
+            The engine supports custom materials defined from the scripting side. Different
+            textures can be assigned to create distinct surface appearances, such as the grass
+            and dirt materials shown in the demo.
+          </p>
+        </article>
+
+        <article class="feature">
+          <h3>Physics</h3>
+          <p>
+            Atlas supports 3D physics using Bullet Physics. In the test scene, physics is used
+            for collision handling as well as player movement and traversal.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Architecture</p>
+        <h2>High-level engine structure</h2>
+      </div>
+      <div class="architecture-grid">
+        <div>
+          <h3>Engine Layer</h3>
+          <p>
+            C++ handles rendering backends, asset loading, math, physics integration, and the
+            engine runtime.
+          </p>
+        </div>
+        <div>
+          <h3>Scripting Layer</h3>
+          <p>
+            Lua drives gameplay behavior, scene logic, materials, and interaction logic on top
+            of the engine systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
